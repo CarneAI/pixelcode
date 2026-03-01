@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Code Academy</title>
+
+    <!-- Fuente Pixel Art -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+</head>
+<body>
+    <!-- Pantalla Inicial -->
+    <div id="welcome-screen" class="screen">
+        <h1>¡Aprende +99 Lenguajes de Programación!</h1>
+        <p>100% gratuito y estilo pixel art 🎨</p>
+        <div id="pixel-animation"></div>
+        <button id="start-btn">EMPEZAR</button>
+    </div>
+
+    <!-- Pantalla de Login -->
+    <div id="login-screen" class="screen hidden">
+        <h2>Inicia sesión para continuar</h2>
+        <button id="google-login-btn">Iniciar con Google</button>
+    </div>
+
+    <!-- Pantalla Principal -->
+    <div id="main-screen" class="screen hidden">
+        <h2>Selecciona tu lenguaje</h2>
+        <select id="language-select">
+            <option value="">-- Elige un lenguaje --</option>
+        </select>
+        <div id="pixel-art-area">
+            <!-- Aquí puedes agregar figuras pixel art -->
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
