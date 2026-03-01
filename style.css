@@ -1,0 +1,87 @@
+/* Fuente y estilo general */
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    background: #111;
+    color: #fff;
+}
+
+/* Pantallas */
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Títulos estilo pixel */
+h1, h2, p {
+    text-shadow: 2px 2px #ff00ff, -2px -2px #00ffff;
+}
+
+/* Botones estilo pixel */
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    border: 3px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Área de pixel art animada */
+#pixel-animation {
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    background: repeating-linear-gradient(
+        0deg, #222, #222 10px, #333 10px, #333 20px
+    );
+    position: relative;
+    overflow: hidden;
+}
+
+/* Bloques pixel animados */
+.pixel-block {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    animation: move 3s infinite alternate;
+}
+
+@keyframes move {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+
+/* Área de selección de lenguaje */
+#pixel-art-area {
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+    background: repeating-linear-gradient(
+        0deg, #222, #222 10px, #333 10px, #333 20px
+    );
+    display: flex;
+    flex-wrap: wrap;
+}
+.pixel-tile {
+    width: 20px;
+    height: 20px;
+    margin: 1px;
+    background-color: #0f0;
+}
